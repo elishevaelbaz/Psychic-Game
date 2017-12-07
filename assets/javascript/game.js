@@ -4,8 +4,8 @@ var wins = 0;
 var losses = 0;
 
 var letters = ["a", "b", "c", "d", "e", "f", "g",
- "h", "i", "j", "k", "m", "n", "o", "p", "q", "r", "s",
-  "t", "u", "v", "w", "x", "y", "z"];
+"h", "i", "j", "k", "m", "n", "o", "p", "q", "r", "s",
+"t", "u", "v", "w", "x", "y", "z"];
 
 var guessed =[];
 var numGuesses = 10;
@@ -92,13 +92,13 @@ function updateGuesses(){
 function updateStat(status){
 
 	if (status == ""){
-var endMessageHeader = document.getElementById("gameEndMessage");
-	endMessageHeader.textContent = ("");
+		var endMessageHeader = document.getElementById("gameEndMessage");
+		endMessageHeader.textContent = ("");
 	}
 	else{
 		var endMessageHeader = document.getElementById("gameEndMessage");
-	endMessageHeader.textContent = ("You " + status + "! The letter was " +
-					 computerLetter + ". Guess what letter I am thinking of now...")
+		endMessageHeader.textContent = ("You " + status + "! The letter was " +
+			computerLetter + ". Guess what letter I am thinking of now...")
 	}
 }
 
